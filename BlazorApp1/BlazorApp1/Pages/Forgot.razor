@@ -1,0 +1,35 @@
+﻿@page "/forgot"
+@layout NoMenu
+<body class="" onload="checkscroll()">
+    <div class="forgot-page">
+        <center>
+            <h1>Forgot Password </h1>
+            <form id="forgot-form"
+                  action="/Success">
+                <div class="form-group" style="width: 503px; 620px;">
+                    <input tabindex="1" placeholder="Username" id="username" class="form-control" name="username" autofocus=""
+                           autocomplete="off" required="required" type="text">
+                </div>
+
+                <div class="form-group" style="width: 503px; 620px;">
+                    <input tabindex="2" placeholder="Email" id="email" class="form-control" name="email" autofocus=""
+                           autocomplete="off" required="required" type="text">
+                </div>
+
+                <div class="form-group" style="width: 503px; 620px;">
+                    <input tabindex="3" placeholder="Phone Number" id="phone" class="form-control" name="phone" autofocus=""
+                           autocomplete="off" required="required" type="text">
+                </div>
+
+                <div id="kc-form-buttons" class="form-group" style=" 611px; width: 503px;">
+                    <input tabindex="4" class="btn btn-primary btn-block btn-lg" name="forgotpassword"
+                           id="forgotpassword" value="Forgot Password" style="width: 503px;" type="submit">
+
+                    <a tabindex="5" href="/Login">Click here to go back to the Login page.</a>
+                    <br />
+                  
+                </div>
+            </form>
+        </center>
+    </div>
+</body>
