@@ -38,10 +38,16 @@
     private async Task HandleLogin()
     {
         submitting = true;
-        if (1 == 1)
+        if (loginModel.Username == "username" && loginModel.Password == "password")
         {
 
             NavigationManager.NavigateTo("/Admin");
+        }
+        else
+        {
+
+            Console.WriteLine("Failure");
+
         }
         submitting = false;
     }
